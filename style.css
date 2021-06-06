@@ -1,0 +1,154 @@
+:root {
+  --bg: #282c34;
+  --fg: #abb2bf;
+  --red: #e06c75;
+  --magenta: #c678dd;
+  --blue: #61afef;
+  --green: #98c379;
+  --yellow: #e5c07b;
+  --cyan: #56b6c2;
+
+  --black: #212121;
+  --white: #efffff;
+}
+
+html {
+  background-color: var(--bg);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji';
+  user-select: none;
+}
+
+/* body {
+  display: flex;
+  place-content: center;
+} */
+
+.root-container {
+  display: grid;
+  place-content: center;
+  margin: 5em clamp(3em, 15%, 100000em);
+
+  grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+  grid-template-rows: 0.8fr repeat(4, 1fr);
+  gap: 3em;
+}
+
+.root-container > a,
+.root-container > div,
+.root-container > form {
+  background-color: var(--black);
+  box-shadow: 0 1em 1em var(--black);
+  border-radius: 1rem;
+  padding: 1em;
+  overflow: hidden;
+  color: var(--white);
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.root-container > a {
+  padding: 1.5em;
+}
+
+.root-container > form {
+  flex-direction: row;
+  grid-column: 1 / -1;
+}
+
+.clock-wrapper {
+  grid-column: 1 / -1;
+  user-select: text;
+}
+
+.clock {
+  font-size: 275%;
+  font-weight: bolder;
+}
+
+.date {
+  font-size: 150%;
+}
+
+.duckduckgo .feather {
+  width: 50%;
+  height: 50%;
+  stroke-width: 5%;
+  cursor: pointer;
+  display: inline;
+}
+
+.duckduckgo input {
+  display: inline;
+  width: 75%;
+  height: 75%;
+  background-color: var(--bg);
+  border: none;
+  border-radius: 1rem;
+  font-size: 125%;
+  padding-left: 1em;
+  color: var(--white);
+  box-shadow: 0 0.5em 1em var(--bg);
+}
+
+.feather {
+  width: 75%;
+  height: 75%;
+  max-width: 7em;
+  max-height: 7em;
+
+  /* height: clamp(3em, 75%, 15em);
+  width: clamp(3em, 75%, 15em); */
+
+  stroke-width: 2.5%;
+  stroke: var(--white);
+  transition: 250ms;
+}
+
+.icon > b {
+  transition: 250ms;
+}
+
+.icon:hover > svg,
+.icon:focus > svg {
+  stroke-width: 5%;
+  transform: scale(1.25);
+}
+
+.icon:hover > b,
+.icon:focus > b {
+  transform: scale(1.25);
+}
+
+.github:hover > svg,
+.github:focus > svg {
+  stroke: var(--blue);
+}
+
+.classroom:hover > svg,
+.classroom:focus > svg {
+  stroke: var(--green);
+}
+
+.youtube:hover > svg,
+.youtube:focus > svg {
+  stroke: var(--red);
+}
+
+.gmail-0:hover > svg,
+.gmail-0:focus > svg {
+  stroke: var(--yellow);
+}
+
+.gmail-1:hover > svg,
+.gmail-1:focus > svg {
+  stroke: var(--magenta);
+}
+
+.gmail-2:hover > svg,
+.gmail-2:focus > svg {
+  stroke: var(--cyan);
+}
