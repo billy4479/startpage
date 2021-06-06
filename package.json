@@ -15,5 +15,6 @@
   },
   "dependencies": {
     "feather-icons": "^4.28.0"
-  }
+  },
+  "license": "MIT"
 }
