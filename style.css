@@ -1,4 +1,5 @@
 :root {
+  /* One Dark
   --bg: #282c34;
   --fg: #abb2bf;
   --red: #e06c75;
@@ -9,7 +10,29 @@
   --cyan: #56b6c2;
 
   --black: #212121;
-  --white: #efffff;
+  --white: #efffff; */
+
+  /* Material Palenight */
+  --bg: #292d3e;
+  --fg: #959dcb;
+
+  --black: #292d3e;
+  --red: #f07178;
+  --green: #c3e88d;
+  --yellow: #ffcb6b;
+  --blue: #82aaff;
+  --magenta: #c792ea;
+  --cyan: #89ddff;
+  --white: #959dcb;
+
+  --bright-black: #676e95;
+  --bright-red: #f78c6c;
+  --bright-green: #444267;
+  --bright-yellow: #32374d;
+  --bright-blue: #8796b0;
+  --bright-magenta: #959dcb;
+  --bright-cyan: #ff5370;
+  --bright-white: #ffffff;
 }
 
 html {
@@ -39,7 +62,7 @@ html {
 .root-container > div,
 .root-container > form {
   background-color: var(--black);
-  box-shadow: 0 1em 1em var(--black);
+  box-shadow: 0 0.5em 2em var(--bright-black);
   border-radius: 1rem;
   padding: 1em;
   overflow: hidden;
@@ -91,7 +114,7 @@ html {
   font-size: 125%;
   padding-left: 1em;
   color: var(--white);
-  box-shadow: 0 0.5em 1em var(--bg);
+  box-shadow: 0 0em 0.5em var(--bright-black);
 }
 
 .feather {
